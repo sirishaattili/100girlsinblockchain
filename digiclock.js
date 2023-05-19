@@ -46,10 +46,11 @@ function  myFunction(){
    if(h>12){
     h=h-12;
    }
+   if(h<10){
+      h="0"+h;
+   }
    
     document.getElementById("example").innerHTML=h+" :  "+m+" :  "+s+ " " + session+"  "+"<br>"+da;
 }
-
-
 
 setInterval(myFunction,3000);
